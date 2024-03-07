@@ -1,0 +1,245 @@
+<?xml version='1.0'?>
+<sdf version='1.4'>
+    <model name="auto robot">
+        <static>false</static>
+        <link name="center">
+            <static>false</static>
+            <pose>0 0 0 1.5707 0 0</pose>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://AutoRobotPrototype/meshes/STL/touch_model.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://AutoRobotPrototype/meshes/dae/center_part.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+                <mass>10</mass> 
+                <!--<inertia> ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.5"</inertia>--> 
+                <pose>0.3 0 0.41 0 0 0</pose>
+            </inertial>
+        </link>
+        <!--leg-->
+        <link name="steer_roll_0">
+            <pose>0.2 -0.2 .115 0 0 0</pose>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://AutoRobotPrototype/meshes/STL/steer_roll.STL</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://AutoRobotPrototype/meshes/dae/steer_roll.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+                <mass>1</mass> 
+                <!--<inertia> ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.5"</inertia>--> 
+                <pose>-0.06 0.025 0 0 0 0</pose>
+            </inertial>
+        </link>
+        <link name="steer_roll_1">
+            <pose>0.18 -.68 .115 0 0 0</pose>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://AutoRobotPrototype/meshes/STL/steer_roll.STL</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://AutoRobotPrototype/meshes/dae/steer_roll.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+                <mass>1</mass> 
+                <!--<inertia> ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.5"</inertia>--> 
+                <pose>-0.06 0.025 0 0 0 0</pose>
+            </inertial>
+        </link>
+        <link name="steer_roll_2">
+            <pose>0.58 -0.44 .115 0 0 0</pose>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://AutoRobotPrototype/meshes/STL/steer_roll.STL</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://AutoRobotPrototype/meshes/dae/steer_roll.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+                <mass>1</mass> 
+                <!--<inertia> ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.5"</inertia>--> 
+                <pose>-0.06 0.025 0 0 0 0</pose>
+            </inertial>
+        </link>
+        <link name="red_in_0">
+            <pose>0.178145 -0.203764 0.017723 0 -0 1.5707</pose>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://AutoRobotPrototype/meshes/STL/red_in.STL</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://AutoRobotPrototype/meshes/dae/red_in.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+                <mass>1</mass> 
+                <!--<inertia> ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.5"</inertia>--> 
+                <pose>0.03 0.035 0.035 0 0 0</pose>
+            </inertial>
+        </link>
+        <link name="red_in_1">
+            <pose>0.159887 -0.687 0.017816 0 -0 1.5707</pose>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://AutoRobotPrototype/meshes/STL/red_in.STL</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://AutoRobotPrototype/meshes/dae/red_in.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+                <mass>1</mass> 
+                <!--<inertia> ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.5"</inertia>--> 
+                <pose>0.03 0.035 0.035 0 0 0</pose>
+            </inertial>
+        </link>
+        <link name="red_in_2">
+            <pose>0.559502 -0.447 0.019141 0 -0 1.5707</pose>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://AutoRobotPrototype/meshes/STL/red_in.STL</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://AutoRobotPrototype/meshes/dae/red_in.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+                <mass>1</mass> 
+                <!--<inertia> ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.5"</inertia>--> 
+                <pose>0.03 0.035 0.035 0 0 0</pose>
+            </inertial>
+        </link>
+        <joint type='revolute' name='roll_0'>
+            <pose>-0.058 0.026 0 0 0 0</pose>
+            <child>steer_roll_0</child>
+            <parent>center</parent>
+            <axis>
+                <xyz>0 0 1</xyz>
+            </axis>
+        </joint>
+        <joint type='revolute' name='roll_1'>
+            <pose>-0.058 0.026 0 0 0 0</pose>
+            <child>steer_roll_1</child>
+            <parent>center</parent>
+            <axis>
+                <xyz>0 0 1</xyz>
+            </axis>
+        </joint>
+        <joint type='revolute' name='roll_2'>
+            <pose>-0.058 0.026 0 0 0 0</pose>
+            <child>steer_roll_2</child>
+            <parent>center</parent>
+            <axis>
+                <xyz>0 0 1</xyz>
+            </axis>
+        </joint>
+        <joint type='revolute' name='red_0'>
+            <pose>0. 0.035 0.035 0 0 0</pose>
+            <child>red_in_0</child>
+            <parent>steer_roll_0</parent>
+            <axis>
+                <xyz>0 1 0</xyz>
+            </axis>
+        </joint>
+        <joint type='revolute' name='red_1'>
+            <pose>0. 0.035 0.035 0 0 0</pose>
+            <child>red_in_1</child>
+            <parent>steer_roll_1</parent>
+            <axis>
+                <xyz>0 1 0</xyz>
+            </axis>
+        </joint>
+        <joint type='revolute' name='red_2'>
+            <pose>0. 0.035 0.035 0 0 0</pose>
+            <child>red_in_2</child>
+            <parent>steer_roll_2</parent>
+            <axis>
+                <xyz>0 1 0</xyz>
+            </axis>
+        </joint>
+        <!--arm-->
+        <link name="root">
+            <pose>0 0.0495 0.012 1.5707 0 -0.02</pose>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://AutoRobotPrototype/meshes/STL/arm_root.STL</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://AutoRobotPrototype/meshes/dae/arm_root.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+                <mass>2</mass>
+                <inertia> ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.5"</inertia>
+                <pose>0.23 0.28 0.465 0 0 0</pose>
+            </inertial>
+        </link>
+        <joint name="arm_shifter" type="prismatic">
+            <pose>0 0 0 0 0 -0.02</pose>
+            <child>root</child>
+            <parent>center</parent>
+            <axis>
+                <limit>
+                    <lower>-0.1</lower>
+                    <upper>0.2</upper>
+                </limit>
+                <xyz>1 0 0</xyz>
+            </axis>
+        </joint>
+    </model>
+</sdf>
