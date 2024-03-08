@@ -519,7 +519,7 @@
             </inertial>
         </link>
 
-                <joint type='revolute' name='co2_l1'>
+        <joint type='revolute' name='co2_l1'>
             <pose>0.184 0.184 0.25 0 0 0</pose>
             <child>arm_l1</child>
             <parent>arm_connecter2</parent>
@@ -606,10 +606,10 @@
             <child>arm_l1</child>
             <parent>arm_lock</parent>
             <axis>
-                <xyz>-0.45 1.3453 -1.01</xyz>
+                <xyz>-0.451 1.115 -1.01</xyz>
                 <limit>
-                    <lower>0</lower>
-                    <upper>0.045</upper>
+                    <lower>-0.035</lower>
+                    <upper>0</upper>
                 </limit>
             </axis>
         </joint>
@@ -619,10 +619,10 @@
             <child>arm_l2</child>
             <parent>arm_lock</parent>
             <axis>
-                <xyz>0.45 -1.3453 1.01</xyz>
+                <xyz>0.451 -1.115 1.01</xyz>
                 <limit>
-                    <lower>0</lower>
-                    <upper>0.045</upper>
+                    <lower>-0.035</lower>
+                    <upper>0</upper>
                 </limit>
             </axis>
         </joint>
@@ -632,10 +632,10 @@
             <child>arm_s1</child>
             <parent>arm_lock</parent>
             <axis>
-                <xyz>-0.45 -1.3453 -1.01</xyz>
+                <xyz>-0.451 -1.115 -1.01</xyz>
                 <limit>
-                    <lower>0</lower>
-                    <upper>0.045</upper>
+                    <lower>-0.035</lower>
+                    <upper>0</upper>
                 </limit>
             </axis>
         </joint>
@@ -645,13 +645,22 @@
             <child>arm_s2</child>
             <parent>arm_lock</parent>
             <axis>
-                <xyz>0.45 1.3453 1.01</xyz>
+                <xyz>0.451 1.115 1.01</xyz>
                 <limit>
-                    <lower>0</lower>
-                    <upper>0.045</upper>
+                    <lower>-0.035</lower>
+                    <upper>0</upper>
                 </limit>
             </axis>
         </joint>
 
+        <plugin name="mono_motor_plugin" filename="libmono_motor_plugin.so">
+            <ros>
+                <namespace></namespace>
+            </ros>
+            <motor_joint>red_0</motor_joint>
+            <name>red</name>
+            <max_rpm>100</max_rpm>
+            <radius>10</radius>
+        </plugin>
     </model>
 </sdf>
