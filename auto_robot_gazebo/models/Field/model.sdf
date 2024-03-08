@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<sdf version='1.4'>
+    <model name="field">
+        <static>true</static>
+        <link name="field">
+            <pose>0 0 0 1.5707 0 0</pose>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://Field/meshes/Assem_field.STL</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://Field/meshes/Assem_field.STL</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+        </link>
+    </model>
+</sdf>
