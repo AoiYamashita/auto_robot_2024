@@ -224,7 +224,7 @@
             </visual>
             <inertial>
                 <mass>2</mass>
-                <inertia> ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.5"</inertia>
+                <!--<inertia> ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.5"</inertia>-->
                 <pose>0.23 0.28 0.465 0 0 0</pose>
             </inertial>
         </link>
@@ -258,7 +258,7 @@
             </visual>
             <inertial>
                 <mass>0.7</mass>
-                <inertia> ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.5"</inertia>
+                <!--<inertia> ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.5"</inertia>-->
                 <pose>0.2 0.4 0.465 0 0 0</pose>
             </inertial>
         </link>
@@ -269,8 +269,8 @@
             <axis>
                 <limit>
                     <lower>-2.7</lower>
-                    <!--<upper>0.8</upper>-->
-                    <upper>0</upper>
+                    <upper>0.8</upper>
+                    <!--<upper>0</upper>-->
                 </limit>
                 <xyz>0 1 0</xyz>
             </axis>
@@ -294,7 +294,7 @@
             </visual>
             <inertial>
                 <mass>0.5</mass>
-                <inertia> ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.5"</inertia>
+                <!--<inertia> ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.5"</inertia>-->
                 <pose>0.13 0.13 0.26 0 0 0</pose>
             </inertial>
         </link>
@@ -328,16 +328,19 @@
                 </geometry>
             </visual>
             <inertial>
-                <mass>0.001</mass>
-                <inertia> ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.5"</inertia>
-                <pose>0.13 0.13 0.26 0 0 0</pose>
+                <mass>0.1</mass>
+                <!--<inertia> ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.5"</inertia>-->
+                <pose>0.13 0.13 0.301 0 0 0</pose>
             </inertial>
         </link>
+        
         <joint type='revolute' name='lock_roll'>
-            <pose>0.125 0.127 0.35 0 0 0</pose>
+            <pose>0.128 0.127 0.1 0 0 0</pose>
             <child>arm_roll</child>
             <parent>arm_lock</parent>
             <axis>
+                <upper>1.5707</upper>
+                <lower>-1.5707</lower>
                 <xyz>1 0 -0.45</xyz>
             </axis>
         </joint>
@@ -359,12 +362,12 @@
                 </geometry>
             </visual>
             <inertial>
-                <mass>0.0001</mass>
-                <inertia> ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.5"</inertia>
-                <pose>0.13 0.13 0.26 0 0 0</pose>
+                <mass>0.001</mass>
+                <!--<inertia> ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.5"</inertia>-->
+                <pose>0.173 0.083 0.304 0 0 0</pose>
             </inertial>
         </link>
-
+        
         <link name="arm_connecter2">
             <pose>0.53 -0.545 0.745 0 2 0</pose>
             <collision name="collision">
@@ -382,9 +385,9 @@
                 </geometry>
             </visual>
             <inertial>
-                <mass>0.0001</mass>
-                <inertia> ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.5"</inertia>
-                <pose>0.13 0.13 0.26 0 0 0</pose>
+                <mass>0.001</mass>
+                <!--<inertia> ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.5"</inertia>-->
+                <pose>0.171 0.17 0.304 0 0 0</pose>
             </inertial>
         </link>
 
@@ -405,9 +408,9 @@
                 </geometry>
             </visual>
             <inertial>
-                <mass>0.0001</mass>
-                <inertia> ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.5"</inertia>
-                <pose>0.13 0.13 0.26 0 0 0</pose>
+                <mass>0.001</mass>
+                <!--<inertia> ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.5"</inertia>-->
+                <pose>0.082 0.172 0.3035 0 0 0</pose>
             </inertial>
         </link>
 
@@ -428,9 +431,9 @@
                 </geometry>
             </visual>
             <inertial>
-                <mass>0.0001</mass>
-                <inertia> ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.5"</inertia>
-                <pose>0.13 0.13 0.26 0 0 0</pose>
+                <mass>0.001</mass>
+                <!--<inertia> ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.5"</inertia>-->
+                <pose>0.084 0.082 0.3035 0 0 0</pose>
             </inertial>
         </link>
 
@@ -487,9 +490,9 @@
                 </geometry>
             </visual>
             <inertial>
-                <mass>0.0001</mass>
-                <inertia> ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.5"</inertia>
-                <pose>0.13 0.13 0.26 0 0 0</pose>
+                <mass>0.01</mass>
+                <!--<inertia> ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.5"</inertia>-->
+                <pose>0.21 0.21 0.34 0 0 0</pose>
             </inertial>
         </link>
 
@@ -510,13 +513,13 @@
                 </geometry>
             </visual>
             <inertial>
-                <mass>0.0001</mass>
-                <inertia> ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.5"</inertia>
-                <pose>0.13 0.13 0.26 0 0 0</pose>
+                <mass>0.01</mass>
+                <!--<inertia> ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.5"</inertia>-->
+                <pose>0.0445 0.0445 0.34 0 0 0</pose>
             </inertial>
         </link>
 
-        <joint type='revolute' name='co2_l1'>
+                <joint type='revolute' name='co2_l1'>
             <pose>0.184 0.184 0.25 0 0 0</pose>
             <child>arm_l1</child>
             <parent>arm_connecter2</parent>
@@ -551,9 +554,9 @@
                 </geometry>
             </visual>
             <inertial>
-                <mass>0.0001</mass>
-                <inertia> ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.5"</inertia>
-                <pose>0.13 0.13 0.26 0 0 0</pose>
+                <mass>0.01</mass>
+                <!--<inertia> ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.5"</inertia>-->
+                <pose>0.21 0.0445 0.33 0 0 0</pose>
             </inertial>
         </link>
 
@@ -574,16 +577,16 @@
                 </geometry>
             </visual>
             <inertial>
-                <mass>0.0001</mass>
-                <inertia> ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.5"</inertia>
-                <pose>0.13 0.13 0.26 0 0 0</pose>
+                <mass>0.01</mass>
+                <!--<inertia> ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.5"</inertia>-->
+                <pose>0.0445 0.21 0.33 0 0 0</pose>
             </inertial>
         </link>
 
         <joint type='revolute' name='co1_s1'>
             <pose>0.184 0.071 0.25 0 0 0</pose>
             <child>arm_s1</child>
-            <parent>arm_connecter2</parent>
+            <parent>arm_connecter1</parent>
             <axis>
                 <xyz>1 0 -0.45</xyz>
             </axis>
@@ -639,7 +642,7 @@
 
         <joint type='prismatic' name='lock_s2'>
             <pose>0.095 0.16 0.35 0 0 0</pose>
-            <child>arm_s1</child>
+            <child>arm_s2</child>
             <parent>arm_lock</parent>
             <axis>
                 <xyz>0.45 1.3453 1.01</xyz>
@@ -649,6 +652,6 @@
                 </limit>
             </axis>
         </joint>
-        
+
     </model>
 </sdf>
