@@ -23,7 +23,14 @@ def generate_launch_description():
                 launch_arguments={'world': conveyorbelt_gazebo}.items(),
              )
     
+    under = Node(
+            package = 'controll_robot',
+            executable = 'under',
+            output = 'screen'
+        )
+
     # ***** RETURN LAUNCH DESCRIPTION ***** #
     return LaunchDescription([
-        gazebo, 
+        gazebo,
+        under 
     ])
